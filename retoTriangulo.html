@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Triangulo</title>
+    <link rel="stylesheet" href="./css/reto.css">
+</head>
+<body>
+    <nav class="barra">
+        <h1>Reto Triangulo Isoceles</h1>
+    </nav>
+    <section class="all">
+        <section class="card">
+            <img class="card__triangulo" src="./img/triangle-solid.svg" alt="Triangulo">
+            <label for="primerLado" class="card__label">Lado</label>
+            <input type="number" id="primerLado" class="card__elemento" placeholder="1">
+
+            <label for="segundoLado" class="card__label">Lado</label>
+            <input type="number" id="segundoLado" class="card__elemento" placeholder="2">
+            
+            <label for="tercerLado" class="card__label">Lado</label>
+            
+            <div class="allign">
+                <input type="number" id="tercerLado" class="card__elemento" placeholder="3">
+                <button class="card__button" type="button" onclick="calcular()">Calcular</button>
+            </div>
+            <script src="./script/reto.js"></script>
+        </section>
+    </section>
+</body>
+</html>

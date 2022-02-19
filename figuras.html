@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/figuras.css">
+    <title>Figuras geometricas</title>
+</head>
+<body>
+    <nav class="barra">
+        <h1>Calculo de figuras geometricas</h1>
+    </nav>
+    <section class="all">
+
+        <div class="card">
+            
+            <img class="card__figura triangulo"class="card__figura"src="./img/triangle-solid.svg" alt="triangulo">
+
+            <form class="card__formulario card__triangulo">
+
+                <label class="card__lbl" for="primerLadoT">Lado</label>
+                <input type="number" id="primerLadoT" class="card__elemento" placeholder="Lado">
+
+                <label class="card__lbl" for="segundoLadoT">Lado</label>
+                <input type="number" id="segundoLadoT" class="card__elemento" placeholder="Lado">
+
+                <label class="card__lbl" for="base">Base</label>
+                <input type="number" id="base" class="card__elemento base" placeholder="Base">
+
+                <label class="card__lbl" for="altura">Altura</label>
+                <input type="number" id="altura" class="card__elemento altura" placeholder="Altura">
+
+                <button onclick="calcularTriangulo()" type="button" type="button" id="btnTriangulo" class="card__button">Calcular</button>
+            
+            </form>
+
+        </div>
+
+        <div class="card">
+            
+            <img class="card__figura"src="./img/square-full-solid.svg" alt="cuadrado">
+
+            <form class="card__formulario">
+
+                <label class="card__lbl" for="lado">Lado</label>
+                <input type="number" id="lado" class="card__elemento" placeholder="Lado">
+
+                <button onclick="calcularCuadrado()" type="button" id="btnCuadrado" class="card__button">Calcular</button>
+            
+            </form>
+
+        </div>
+
+        <div class="card">
+
+            <img class="card__figura"src="./img/circle-solid.svg" alt="circulo">
+
+            <form class="card__formulario">
+
+                <label class="card__lbl" for="radio">Radio</label>
+                <input type="number" id="radio" class="card__elemento" placeholder="Radio">
+
+                <button onclick="calcularCirculo()" type="button" id="btnCirculo" class="card__button">Calcular</button>
+            
+            </form>
+
+        </div>
+
+    </section>
+    <script src="./script/figuras.js"></script>
+</body>
+</html>

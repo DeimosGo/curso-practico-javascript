@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/descuentos.css" >
+    <title>Descuentos y porcentajes</title>
+</head>
+<body>
+    <nav class="barra">
+        <h1>Porcentajes y descuentos</h1>
+    </nav>
+    <section class="all">
+
+        <section class="card">
+            
+            <img class="card__imagen" src="https://findicons.com/files/icons/2759/e_commerce/512/discount.png" alt="disccount">
+            
+            <label for="precio" class="card__label">Precio</label>
+            <input type="number" id="precio" class="card__elemento" placeholder="$">
+
+            <label for="descuento" class="card__label">Descuento</label>
+            <input type="number" id="descuento" class="card__elemento" placeholder="%">
+
+            <label for="cupon" class="card__label">Cupon</label>
+            <input type="text" id="cupon" class="card__elemento" placeholder="Cupon_Descuento">
+                
+            <button class="card__button" type="button" onclick="calcular()">Calcular</button>
+
+            <p class="result" id="result">
+                
+            </p>
+            <p class="result" id="cuponp">
+                
+            </p>
+            <script src="./script/descuento.js"></script>
+        </section>
+
+    </section>
+</body>
+</html>

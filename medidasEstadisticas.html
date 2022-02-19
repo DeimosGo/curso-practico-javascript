@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas Estadisticas</title>
+    <link rel="stylesheet" href="./css/medidasEstadisticas.css">
+</head>
+<body>
+    <nav class="barra">
+        <h1>Medidas Estadisticas</h1>
+    </nav>
+    
+    <section class="all">
+
+        <section class="card">
+
+            <img class="card__img" src="https://cdn-icons-png.flaticon.com/512/2620/2620507.png" alt="Estadistica">
+
+            <form class="card__formulario" action="submit">
+        
+                <label for="card__datos" class="card__label">Numeros a medir:</label>
+                <input id="card__datos" class="card__input" placeholder="valor1, valor2, valor3, ...">
+
+                <label id="card__lblPeso" for="card__peso" class="hide">Peso de los valores:</label>
+                <input id="card__peso" class="hide" placeholder="peso-valor1, peso-valor2, peso-valor3, ...">
+
+                <div>
+                    <input onclick="ocultar()" name="medida" class="card__radio" type="radio" id="media" checked>
+                    <label for="media">Media</label>
+                </div>
+                
+                <div>
+                    <input onclick="ocultar()" name="medida" class="card__radio" type="radio" id="moda">
+                    <label for="media">Moda</label>
+                </div>
+                
+                <div>
+                    <input onclick="ocultar()" name="medida" class="card__radio" type="radio" id="mediana">
+                    <label for="media">Mediana</label>
+                </div>
+
+                <div>
+                    <input onclick="mostrar()" name="medida" class="card__radio" type="radio" id="ponderado">
+                    <label for="ponderado">Promedio ponderado</label>
+                </div>
+                
+                <input onclick="calcular()" class="card__button" type="button" value="Calcular">
+            </form>
+
+            <section class="card__result">
+                <p id="result">Resultado!!</p>
+            </section>
+
+        </section>
+    </section>
+    <script src="./script/medidasEstadisticas.js"></script>
+</body>
+</html>

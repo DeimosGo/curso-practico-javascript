@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis Salarial</title>
+    <link rel="stylesheet" href="./css/salarios.css">
+</head>
+<body>
+    <nav class="barra">
+        <h1>Analisis Salarial</h1>
+    </nav>
+    
+    <section class="all">
+
+        <section class="card">
+
+            <img class="card__img" src="https://qdeskmexico.com/wp-content/uploads/2019/11/sueldos-y-salarios.png" alt="Salario-image">
+
+            <form class="card__formulario" action="submit">
+        
+                <h1 class="card__label">Analisis de Salarios en el Perú</h1>
+
+                <div>
+                    <input name="medida" class="card__radio" type="radio" id="media" checked>
+                    <label for="media">Media</label>
+                </div>
+                
+                <div>
+                    <input name="medida" class="card__radio" type="radio" id="moda">
+                    <label for="media">Moda</label>
+                </div>
+                
+                <div>
+                    <input name="medida" class="card__radio" type="radio" id="mediana">
+                    <label for="media">Mediana</label>
+                </div>
+
+                <div>
+                    <input name="medida" class="card__radio" type="radio" id="medianatop">
+                    <label for="ponderado">Mediana Top 10</label>
+                </div>
+                
+                <input onclick="calcular()" class="card__button" type="button" value="Calcular">
+            </form>
+
+            <section class="card__result">
+                <p id="result">Resultado!!</p>
+            </section>
+
+        </section>
+    </section>
+    <script src="./script/salarios.js"></script>
+    <script src="./script/analisis.js"></script>
+</body>
+</html>
+    
